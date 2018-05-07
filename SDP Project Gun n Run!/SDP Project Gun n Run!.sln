@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP Project Gun n Run!", "SDP Project Gun n Run!.csproj", "{1E716A32-4D5A-967F-E3C9-00788DA670D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP Project Gun n Run!.Plugins", "SDP Project Gun n Run!.Plugins.csproj", "{BBAB550F-2F8D-E482-9BB4-7CE6485EB26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP Project Gun n Run!.Editor.Plugins", "SDP Project Gun n Run!.Editor.Plugins.csproj", "{78C81948-25D9-BB11-E6AC-5547FB69DB30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E716A32-4D5A-967F-E3C9-00788DA670D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E716A32-4D5A-967F-E3C9-00788DA670D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E716A32-4D5A-967F-E3C9-00788DA670D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E716A32-4D5A-967F-E3C9-00788DA670D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAB550F-2F8D-E482-9BB4-7CE6485EB26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAB550F-2F8D-E482-9BB4-7CE6485EB26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAB550F-2F8D-E482-9BB4-7CE6485EB26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAB550F-2F8D-E482-9BB4-7CE6485EB26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C81948-25D9-BB11-E6AC-5547FB69DB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C81948-25D9-BB11-E6AC-5547FB69DB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C81948-25D9-BB11-E6AC-5547FB69DB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C81948-25D9-BB11-E6AC-5547FB69DB30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
