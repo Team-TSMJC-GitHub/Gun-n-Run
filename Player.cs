@@ -100,11 +100,33 @@ public class Player : MonoBehaviour
     void OnDestroy()
     {
         // when player is dead
-        HealthBar playerHealth = this.GetComponent<HealthBar>();
-        if (playerHealth != null && playerHealth.hp <= 0)
+        HealthBar playerHealthbar = this.GetComponent<HealthBar>();
+        if (playerHealthbar != null && playerHealthbar.hp <= 0)
         {
             // Game Over
             //need gameover script here
+        }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        bool damagePlayer = false;
+
+        // Collision with the boss
+        Boss boss = other.gameObject.GetComponent<Boss>();
+        if (boss != null)
+        {
+            // damage to the boss 
+            HealthBar bossHealthbar = boss.GetComponent<HealthBar>();
+            if (bossHealthbar != null) bossHealthbar.Damage(1);
+
+            damagePlayer = true;
+        }
+
+        // Damage to the player
+        if (damagePlayer)
+        {
+            HealthBar playerHealthbar = this.GetComponent<HealthBar>();
+            if (playerHealthbar != null) playerHealthbar.Damage(1);
         }
     }
 }
