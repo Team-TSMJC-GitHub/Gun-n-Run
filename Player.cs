@@ -97,4 +97,14 @@ public class Player : MonoBehaviour
             Instantiate(Instantiate(laserprefab, transform.position + new Vector3(3, 0, 0), Quaternion.identity));
         }
     }
+    void OnDestroy()
+    {
+        // when player is dead
+        HealthBar playerHealth = this.GetComponent<HealthBar>();
+        if (playerHealth != null && playerHealth.hp <= 0)
+        {
+            // Game Over
+            //need gameover script here
+        }
+    }
 }
